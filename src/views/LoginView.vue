@@ -2,16 +2,68 @@
 </script>
 
 <template>
-    <h1>LOGIN</h1>
-
+    <div class="container">
+    <form id="login" action="">
+        <h1>LOGIN</h1>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email">
+        <label for="senha">Senha:</label>
+        <input type="password" placeholder="Senha">
+        <button id="botaoEntrar" type="submit"><span class="entrar">Entrar</span></button>
+        <a href="">Não tem conta?</a>
+    </form>
+</div>
 </template>
 
 <style scoped>
-h1{
-text-align: center;
-margin-bottom: 725px;
-margin-top: 253px;
-font-family: "League Spartan", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+h1{
+    text-align: center;
+    margin: 92px;
+    color: #656565;
+    font-family: "League Spartan", sans-serif;
+
+}
+#login{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 450px;
+    height: 56px;
+    border-radius: 10px;
+    border-color: black;
+    opacity: 0.5;
+    border-width: 1px;
+}
+#botaoEntrar{
+    border-radius: 10px;
+    background-color: #8FD085; 
+    width: 247px;
+    height: 56px;
+    border: none;
+    margin: 51px auto;
+    font-family: "League Spartan", sans-serif;
+
+}
+.entrar{
+    color: #656565;
+}
+label{
+    margin: 10px 0;
+    font-family: "League Spartan", sans-serif;
+}
+a{
+    text-align: center;
+    color: #656565;
+}
+
 
 </style>

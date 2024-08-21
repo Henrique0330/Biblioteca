@@ -13,7 +13,7 @@
 </template>
 
 <style scoped>
-  .novidade{
+  /* .novidade{
     background-color: #85B5D0;
     width: 450px;
     height: 350px;
@@ -41,6 +41,6 @@
   .livro1{
     width: 180px;
     height: 250px;
-  }
+  } */
 
 </style>

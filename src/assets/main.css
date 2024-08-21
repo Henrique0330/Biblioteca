@@ -1,5 +1,5 @@
 @import './base.css';
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap');
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -32,7 +32,5 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-  body{
-    background-color: blueviolet;
-  }
+  
 }

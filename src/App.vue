@@ -1,13 +1,15 @@
 <script setup>
+
 </script>
 
 <template>
-  <div class="novidade">
+  <!-- <div class="novidade">
     <h2 class="tittle">Novidade</h2>
     <div class="container">
     <div class="livroN"></div>
     <div class="livro1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus, ducimus aliquam perferendis quidem iure natus corporis, voluptatibus vero amet doloremque est, unde reprehenderit distinctio. Rerum maxime debitis aut minus?</div></div>
-  </div>
+  </div> -->
+  <router-view></router-view>
 </template>
 
 <style scoped>
@@ -42,4 +44,3 @@
   }
 
 </style>
-130

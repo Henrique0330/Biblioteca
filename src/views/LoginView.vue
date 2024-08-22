@@ -42,6 +42,7 @@ input {
     border-color: black;
     opacity: 0.5;
     border-width: 1px;
+    padding: 0 10px; 
 }
 #botaoEntrar{
     border-radius: 10px;
@@ -51,13 +52,17 @@ input {
     border: none;
     margin: 51px auto;
     font-family: "League Spartan", sans-serif;
-
 }
+#botaoEntrar:hover{
+    background-color: #2b6a22;
+}
+
 .entrar{
-    color: #656565;
+    color: #222121;
+    font-size: 20px;
 }
 label{
-    margin: 10px 0;
+    margin: 16px 0;
     font-family: "League Spartan", sans-serif;
 }
 a{

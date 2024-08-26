@@ -19,11 +19,12 @@
       </div>
     </div>
     <div class="melhoresL">
-      <h1 class="tittleN">1 Best seller</h1> 
-      <div class="obs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus, ducimus
-          aliquam perferendis quidem iure natus corporis, voluptatibus vero amet doloremque est, unde reprehenderit
-          distinctio. Rerum maxime debitis aut minus?</div>
-          <div class="imagen"></div>
+      <h1 class="tittleN">1 Best seller</h1>
+      <div class="container2">
+        <div class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores debitis amet ipsa
+          accusamus earum, fugit perferendis velit id soluta temporibus illo! Ullam, error!</div>
+        <div class="imagem"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +45,25 @@
   border-radius: 1rem;
 }
 
+.container2{
+  display: flex;
+  gap: 2rem;
+  padding-top: 30px;
+}
+
+.imagem {
+  background-color: #D9D9D9;
+  width: 270px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.bio {
+  width: 180px;
+  height: 250px;
+  padding-left: 50px;
+}
+
 .tittle {
   text-align: center;
   font-size: 25px;
@@ -52,8 +72,9 @@
 
 .tittleN {
   text-align: center;
-  margin: 40px 0 16px 0;
-  font-size: 70px;
+  font-size: 90px;
+  margin: .5rem 1rem 1rem 0;
+  margin-top: 20px;
 }
 
 .container {
@@ -62,21 +83,11 @@
   gap: 1rem;
 }
 
+
+
 .livro1 {
   width: 180px;
   height: 250px;
-}
-
-.obs{
-  width: 180px;
-  height: 250px;
-}
-
-.imagen{
-  background-color: #ff0000;
-  width: 10px;
-  height: 10px;
-  border-radius: 1rem;
 }
 
 .melhoresL {

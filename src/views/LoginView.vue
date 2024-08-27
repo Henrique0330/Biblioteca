@@ -6,9 +6,9 @@
     <form id="login" action="">
         <h1>LOGIN</h1>
         <label for="email">Email:</label>
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" required>
         <label for="senha">Senha:</label>
-        <input type="password" placeholder="Senha">
+        <input type="password" placeholder="Senha" required>
         <button id="botaoEntrar" type="submit"><span class="entrar">Entrar</span></button>
         <a href="">Não tem conta?</a>
     </form>

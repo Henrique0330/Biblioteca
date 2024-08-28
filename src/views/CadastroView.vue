@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from "vue"
-
+const cor = ref()
 const texto = ref("CPF do responsável")
 
 function trocarTexto(){
@@ -15,7 +15,7 @@ function trocarTexto(){
             <h1>CADASTRO</h1>
             <h3>Você é:</h3>
             <div class="EstudanteResponsavel">
-            <button class="responsavel" @click="trocarTexto()">Responsavel</button>
+            <button class="responsavel" v-bind:style="trocarCor()" @click="trocarTexto()">Responsavel</button>
             <button class="estudante" @click="trocarTexto()">Estudante</button>
         </div>
             <label for="Nome">Nome</label>

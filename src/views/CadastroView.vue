@@ -17,7 +17,7 @@
             <input type="password" name="" id="" placeholder="Senha">
             <label for="Confirme senha">Confirme a senha</label>
             <input type="password" name="" id="" placeholder="Confirme sua senha">
-            <label for="CPF"></label>
+            <label for="CPF">CPF</label>
             <input type="text" name="" id="" placeholder="CPF">
             <label for="CPF do responsável">CPF do responsável</label>
             <input type="text" name="" id="" placeholder="CPF do responsável">
@@ -36,10 +36,14 @@
 }
 h1{
     text-align: center;
-    margin: 92px;
+    margin: 72px;
     color: #656565;
     font-family: "League Spartan", sans-serif;
 
+}
+h3{
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
 }
 form.cadastro{
     display: flex;
@@ -84,6 +88,21 @@ a{
     width: 145px;
     height: 46px;
 }
-
+.EstudanteResponsavel > button{
+    border-radius: 10px;
+    border: none;
+    margin: 0 10px;
+}
+.EstudanteResponsavel > .responsavel:hover{
+    background-color: #454343;
+}
+.EstudanteResponsavel > .estudante:hover{
+    background-color: #2b6a22;
+}
+.EstudanteResponsavel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 </style>

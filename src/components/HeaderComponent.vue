@@ -1,16 +1,105 @@
+<script setup>
+import { ref } from 'vue';
+const showMenu = ref(false)
+</script>
 <template>
     <header>
         <div>
-            <h1>Biblioteca</h1>
+            <h1>BIBLIOTECA</h1>
         </div>
         <div class="barra">
-            <img src="../assets/logo.svg" alt="Ícone de pesquisa" class="icon">
+            <img src="/public/lupaPesquisa.svg" alt="Ícone de pesquisa" class="icon">
             <input type="pesquisa" name="pesquisa" placeholder="Buscar">
+        </div>
+        <div class="menu" @click="showMenu = !showMenu">
+            <img src="/public/menu.svg" alt="icone menu" class="menuC">
+        </div>
+        <div class="menuSelection" v-if="showMenu">
+            <div class="fundo">
+                <ul class="menu-list">
+                    <li class="menu-item">GÊNEROS</li>
+                    <li class="submenu-item">• SUSPENSE & TERROR</li>
+                    <li class="submenu-item">• AVENTURA</li>
+                    <li class="submenu-item">• ROMANCE</li>
+                    <li class="submenu-item">• ESTUDOS DIVERSOS</li>
+                    <li class="menu-item">EMPRESTADOS</li>
+                    <li class="menu-item">SOBRE NÓS</li>
+                </ul>
+                <button class="login-button">LOGIN</button>
+            </div>
         </div>
     </header>
 </template>
 
 <style scoped>
+.menuSelection{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 20%;
+    right: 0;
+    margin-top: 120px;
+}
+.fundo{
+    width: 300px;
+    background-color: #5A7851;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.submenu-item {
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submenu-item:hover {
+    background-color: #FFFFFF;
+    color: #5A7851;
+}
+
+.login-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #5A7851;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #E8E8E8;
+}
+
+.menuC {
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 130px;
+}
 
 header {
     display: flex;
@@ -20,8 +109,11 @@ header {
     margin: 0 0 3rem 0;
     background-color: #8FD085;
 }
-header div h1{
+
+header div h1 {
     margin-top: 3rem;
+    letter-spacing: 5px;
+    color: #FFFFFF;
 }
 
 .barra {
@@ -29,6 +121,7 @@ header div h1{
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-right: 20px;
 }
 
 .barra img.icon {

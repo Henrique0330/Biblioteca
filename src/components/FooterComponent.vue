@@ -29,13 +29,15 @@ footer {
 }
 
 .footerP {
-  margin-top: 20px;
-  padding: 10px 400px 30px 400px;
+  margin-top: 90px;
+  padding: 10px 150px 30px 400px;
   text-align: center;
   color: #FFFFFF;
 }
 
 .Tfooter {
   color: #FFFFFF;
+  padding-top: 220px;
+  padding-left: 250px;
 }
 </style>

@@ -10,7 +10,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
       <h2 class="Lcinema">LIVROS</h2>
       <div class="bioC">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur possimus
+        <p class="clean">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur possimus
           quasi
           labore! Magni dolore nostrum quidem dolorem error iure, dolores temporibus explicabo necessitatibus ab
           minus.
@@ -45,10 +45,12 @@ import FooterComponent from '@/components/FooterComponent.vue'
     <div class="LivrosME1">
       <div class="together2">
         <div class="L1"></div>
+        <div class="clean2">
         <h2>Livros</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
           repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
           expedita! Ratione, doloremque itaque.</p>
+        </div>
       </div>
     </div>
     <div class="LivrosME2">
@@ -74,6 +76,11 @@ import FooterComponent from '@/components/FooterComponent.vue'
 </template>
 
 <style scoped>
+
+.clean{
+  padding-top: 20px;
+}
+
 .LivrosME1 {
   width: 340px;
   height: 670px;
@@ -128,6 +135,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
   height: 350px;
   border-radius: 1rem;
   padding-left: 38px;
+  color: #FFFFFF;
 }
 
 .livroN {
@@ -166,13 +174,14 @@ import FooterComponent from '@/components/FooterComponent.vue'
   text-align: center;
   font-size: 90px;
   margin: .5rem 1rem 1rem 0;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .container {
   display: flex;
   width: 100%;
   gap: 1rem;
+  padding-top: 20px;
 }
 
 .livro1 {
@@ -218,6 +227,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 
 .juntosC {
   padding: 50px 160px 0 160px;
+  color: #FFFFFF;
 }
 
 input {

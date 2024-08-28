@@ -1,14 +1,9 @@
 <script setup>
-import livrosRomance from './views/livrosRomance.vue';
-import livrosAventura from './views/livrosAventura.vue';
-import livrosDiversos from './views/livrosDiversos.vue';
-import livrosSuspTerr from './views/livrosSuspTerr.vue';
+import { RouterView } from 'vue-router';
+
 </script>
 <template>
-  <livrosRomance />
-  <livrosAventura />
-  <livrosDiversos />
-  <livrosSuspTerr />
+  <RouterView></RouterView>
 </template>
 <style scoped>
 </style>

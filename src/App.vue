@@ -1,9 +1,15 @@
 <script setup>
-import divsLivros from './views/divsLivros.vue';
+import livrosRomance from './views/livrosRomance.vue';
+import livrosAventura from './views/livrosAventura.vue';
+import livrosDiversos from './views/livrosDiversos.vue';
+import livrosSuspTerr from './views/livrosSuspTerr.vue';
 </script>
 
 <template>
-  <divsLivros></divsLivros>
+  <livrosRomance />
+  <livrosAventura />
+  <livrosDiversos />
+  <livrosSuspTerr />
 </template>
 
 <style scoped>

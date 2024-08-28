@@ -38,15 +38,16 @@ h1{
 input {
     width: 450px;
     height: 56px;
-    border-radius: 10px;
-    border-color: black;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
     opacity: 0.5;
     border-width: 1px;
     padding: 0 10px;
     font-size: 16px; 
+    border: solid 2px;
 }
 #botaoEntrar{
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: #8FD085; 
     width: 247px;
     height: 56px;

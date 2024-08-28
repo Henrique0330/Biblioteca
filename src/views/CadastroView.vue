@@ -1,13 +1,22 @@
 <script setup>
+import { ref, computed } from "vue"
+
+const texto = ref("CPF do responsável")
+
+function trocarTexto(){
+    console.log(texto.value)
+    texto.value = texto.value == "CPF do responsável" ? "CPF do aluno" : "CPF do responsável"
+}
+
 </script>
 <template>
     <div class="container">
-        <form action="" class="cadastro">
+        <form action="" class="cadastro" @submit.prevent>
             <h1>CADASTRO</h1>
             <h3>Você é:</h3>
             <div class="EstudanteResponsavel">
-            <button class="responsavel">Responsavel</button>
-            <button class="estudante">Estudante</button>
+            <button class="responsavel" @click="trocarTexto()">Responsavel</button>
+            <button class="estudante" @click="trocarTexto()">Estudante</button>
         </div>
             <label for="Nome">Nome</label>
             <input type="text" placeholder="Nome">
@@ -19,7 +28,7 @@
             <input type="password" name="" id="" placeholder="Confirme sua senha">
             <label for="CPF">CPF</label>
             <input type="text" name="" id="" placeholder="CPF">
-            <label for="CPF do responsável">CPF do responsável</label>
+            <label for="CPF do responsável">{{texto}}</label>
             <input type="text" name="" id="" placeholder="CPF do responsável">
             <button class="BotaoCadastro">Cadastrar</button>
             <a href="">Já tenho conta!</a>
@@ -57,6 +66,7 @@ input {
     opacity: 0.5;
     border-width: 1px;
     padding: 0 10px; 
+    font-size: 16px;
 }
 .BotaoCadastro{
     border-radius: 10px;
@@ -66,6 +76,7 @@ input {
     border: none;
     margin: 51px auto;
     font-family: "League Spartan", sans-serif;
+    font-size: 15px;
 }
 .BotaoCadastro:hover{
     background-color: #2b6a22;

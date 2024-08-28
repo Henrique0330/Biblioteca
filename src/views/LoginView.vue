@@ -42,7 +42,8 @@ input {
     border-color: black;
     opacity: 0.5;
     border-width: 1px;
-    padding: 0 10px; 
+    padding: 0 10px;
+    font-size: 16px; 
 }
 #botaoEntrar{
     border-radius: 10px;

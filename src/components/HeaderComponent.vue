@@ -1,11 +1,13 @@
 <script setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router'
+const route = useRoute()
 const showMenu = ref(false)
 </script>
 <template>
     <header>
         <div>
-            <h1>BIBLIOTECA</h1>
+            <h1 @click="this.$router.push('/')">BIBLIOTECA</h1>
         </div>
         <div class="barra">
             <img src="/public/lupaPesquisa.svg" alt="Ícone de pesquisa" class="icon">
@@ -18,14 +20,14 @@ const showMenu = ref(false)
             <div class="fundo">
                 <ul class="menu-list">
                     <li class="menu-item">GÊNEROS</li>
-                    <li class="submenu-item">• SUSPENSE & TERROR</li>
-                    <li class="submenu-item">• AVENTURA</li>
-                    <li class="submenu-item">• ROMANCE</li>
-                    <li class="submenu-item">• ESTUDOS DIVERSOS</li>
+                    <li class="submenu-item" @click="this.$router.push('/susTerror')">• SUSPENSE & TERROR</li>
+                    <li class="submenu-item" @click="this.$router.push('/aventura')">• AVENTURA</li>
+                    <li class="submenu-item" @click="this.$router.push('/romance')">• ROMANCE</li>
+                    <li class="submenu-item" @click="this.$router.push('/diversos')">• ESTUDOS DIVERSOS</li>
                     <li class="menu-item">EMPRESTADOS</li>
                     <li class="menu-item">SOBRE NÓS</li>
                 </ul>
-                <button class="login-button">LOGIN</button>
+                <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>
             </div>
         </div>
     </header>
@@ -36,7 +38,7 @@ const showMenu = ref(false)
     position: absolute;
     z-index: 10;
     height: 100%;
-    width: 20%;
+    width: 20vw;
     right: 0;
     margin-top: 120px;
 }
@@ -49,6 +51,7 @@ const showMenu = ref(false)
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 .menu-list {
@@ -99,6 +102,8 @@ const showMenu = ref(false)
     height: 50px;
     margin-top: 40px;
     margin-right: 130px;
+    cursor: pointer;
+    user-select: none;
 }
 
 header {
@@ -114,6 +119,12 @@ header div h1 {
     margin-top: 3rem;
     letter-spacing: 5px;
     color: #FFFFFF;
+    cursor: pointer;
+    user-select: none;
+}
+
+header div h1:hover{
+    text-decoration: underline;
 }
 
 .barra {
@@ -129,7 +140,7 @@ header div h1 {
     height: auto;
     position: absolute;
     left: 10px;
-
+    user-select: none;
 }
 
 .barra input {
@@ -142,6 +153,7 @@ header div h1 {
     background-color: #8FD085;
     color: white;
     font-size: 16px;
+    user-select: none;
 }
 
 .barra input::placeholder {

@@ -32,7 +32,7 @@ function trocarTexto(){
             <label for="CPF do responsável">{{texto}}</label>
             <input type="text" name="" id="" placeholder="CPF do responsável">
             <button class="BotaoCadastro">Cadastrar</button>
-            <a href="">Já tenho conta!</a>
+            <RouterLink to='/login'> Não tem conta?</RouterLink>
         </form>
     </div>
 </template>

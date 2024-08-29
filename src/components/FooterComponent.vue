@@ -2,7 +2,7 @@
       <footer>
     <h1 class="Tfooter">BIBLIOTECA</h1>
     <div class="footerP">
-      <h2>BIBLI OTECA® É UMA MARCA REGISTRADA, CRIADA EM 2024.
+      <h2>BIBLIOTECA® É UMA MARCA REGISTRADA, CRIADA EM 2024.
         CNPJ: XX.XXX.XXX/XXXX-XX</h2>
       <h3>Rua Davi da rosa, 584, Aventureiro, Joinville-SC - 89226-435</h3>
       <hr>
@@ -26,6 +26,7 @@ footer {
   height: 440px;
   background-color: #8FD085;
   display: flex;
+  margin-top: 150px;
 }
 
 .footerP {

@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <div class="container">
-    <form id="login" action="">
+    <form id="login" action="" @submit.prevent="this.$router.push('/')">
         <h1>LOGIN</h1>
         <label for="email">Email:</label>
         <input type="email" placeholder="Email" required>

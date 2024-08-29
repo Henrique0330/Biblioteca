@@ -1,4 +1,5 @@
 <script setup>
+//  import login from '../components/LoginComp.vue'
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue'
 </script>

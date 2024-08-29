@@ -1,4 +1,7 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
+
 </script>
 
 <template>
@@ -10,7 +13,7 @@
         <label for="senha">Senha:</label>
         <input type="password" placeholder="Senha" required>
         <button id="botaoEntrar" type="submit"><span class="entrar">Entrar</span></button>
-        <a href="">Não tem conta?</a>
+        <RouterLink to='/cadastro'> Não tem conta?</RouterLink>
     </form>
 </div>
 </template>

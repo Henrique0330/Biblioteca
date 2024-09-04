@@ -46,7 +46,6 @@ const showMenu = ref(false)
     width: 300px;
     background-color: #5A7851;
     padding: 20px;
-    font-family: Arial, sans-serif;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -170,7 +169,7 @@ header div h1:hover{
 }
 
 @media (max-width: 480px) {
-    .barra input {
+    .barra input { 
         max-width: 200px;
         padding-left: 30px;
     }

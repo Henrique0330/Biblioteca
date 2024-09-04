@@ -1,16 +1,55 @@
 <script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
 </script>
 
 <template>
-  <HeaderComponent />
+  <div class="container">
+    <div class="carrossel">
+      <div class="textCarrossel">
+        <h2>LIVROS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa modi eaque minus vel atque quia
+          unde labore incidunt pariatur ratione, sint in magni consequatur, dolorum asperiores nam autem commodi?Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, error rem qui vel saepe accusamus tempore ipsa
+          ipsum, porro doloremque quam quo molestias praesentium eaque hic temporibus minima expedita magnam?
+        </p>
+      </div>
+      <div class="imgCarrossel"></div>
+    </div>
+    <div class="novidade">
+      <div class="headerNew">
+        <h2>NOVIDADE</h2>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>LIVRO 0</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
+            assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
+            libero.</p>
+        </div>
+        <div class="img"></div>
+      </div>
+    </div>
+    <div class="novidade">
+      <div class="headerNew">
+        <h2>NOVIDADE</h2>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>LIVRO 0</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
+            assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
+            libero.</p>
+        </div>
+        <div class="img"></div>
+      </div>
+    </div>
+  </div>
+  <!--   
   <div class="cinema">
     <div class="juntosC">
-
       <h2 class="Lcinema">LIVROS</h2>
       <div class="bioC">
-        <p class="clean">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur possimus
+        <p class="clean">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur
+          possimus
           quasi
           labore! Magni dolore nostrum quidem dolorem error iure, dolores temporibus explicabo necessitatibus ab
           minus.
@@ -46,10 +85,10 @@ import FooterComponent from '@/components/FooterComponent.vue';
       <div class="together2">
         <div class="L1"></div>
         <div class="clean2">
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
+          <h2>Livros</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
+            repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
+            expedita! Ratione, doloremque itaque.</p>
         </div>
       </div>
     </div>
@@ -71,180 +110,66 @@ import FooterComponent from '@/components/FooterComponent.vue';
           expedita! Ratione, doloremque itaque.</p>
       </div>
     </div>
-  </div>
+  </div> -->
   <FooterComponent />
 </template>
 
 <style scoped>
-
-.clean{
-  padding-top: 20px;
-}
-
-.LivrosME1 {
-  width: 340px;
-  height: 670px;
-  background-color: #D08585;
-  border-radius: 20px;
-}
-
-.LivrosME2 {
-  width: 340px;
-  height: 670px;
-  background-color: #F0C65B;
-  border-radius: 20px;
-}
-
-.LivrosME3 {
-  width: 340px;
-  height: 670px;
-  background-color: #85B5D0;
-  border-radius: 20px;
-}
-
-.L1 {
-  width: 280px;
-  height: 370px;
-  background-color: #D9D9D9;
-  border-radius: 10px;
-}
-
-.together2 {
-  margin: 25px 28px 0 28px;
-  color: #FFFFFF;
-}
-
-.container3 {
+.container {
+  width: 70%;
+  margin: auto;
   display: flex;
-  gap: 5rem;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 70px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.MaisE {
-  font-size: 40px;
-  margin-top: 180px;
-  text-align: center;
-  color: #D08585;
+.carrossel {
+  width: 90%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textCarrossel {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgCarrossel {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
 }
 
 .novidade {
-  background-color: #85B5D0;
-  width: 450px;
-  height: 350px;
-  border-radius: 1rem;
-  padding-left: 38px;
-  color: #FFFFFF;
+  width: 40%;
+  height: 20rem;
+  margin: 2rem auto;
 }
 
-.livroN {
-  background-color: #D9D9D9;
-  width: 180px;
-  height: 250px;
-  border-radius: 1rem;
-}
-
-.container2 {
-  display: flex;
-  gap: 2rem;
-  padding-top: 30px;
-}
-
-.imagem {
-  background-color: #D9D9D9;
-  width: 270px;
-  height: 130px;
-  border-radius: 10px;
-}
-
-.bio {
-  width: 180px;
-  height: 250px;
-  padding-left: 50px;
-}
-
-.tittle {
-  text-align: center;
-  font-size: 25px;
-  margin: .5rem 0 1rem 0;
-}
-
-.tittleN {
-  text-align: center;
-  font-size: 90px;
-  margin: .5rem 1rem 1rem 0;
-  margin-top: 20px; 
-}
-
-.container {
-  display: flex;
+.headerNew {
   width: 100%;
-  gap: 1rem;
-  padding-top: 20px;
-}
-
-.livro1 {
-  width: 180px;
-  height: 250px;
-}
-
-.melhoresL {
-  width: 571px;
-  height: 350px;
-  border: #F0C65B solid;
-  border-radius: 1rem;
-  color: #FFE999;
-  font-size: 455px 130px;
-  margin-left: 45px;
-}
-
-.together {
   display: flex;
-  margin-left: 318px;
-  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
 }
 
-.cinema {
-  width: 1060px;
-  height: 300px;
-  background-color: #D08597;
-  border-radius: 0.5rem;
-  margin-left: 350px;
-  margin-top: 40px;
-}
-
-.Lcontainer {
-  width: 800px;
-  height: 150px;
-  background-color: #D9D9D9;
-  border-radius: 10px;
-}
-
-.bioC {
+.content {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
-.juntosC {
-  padding: 50px 160px 0 160px;
-  color: #FFFFFF;
+.text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
-input {
-  border-radius: 10px;
-  border: #FFFFFF solid;
-  background-color: #8FD085;
-  width: 300px;
-  height: 18px;
-}
-
-input::placeholder {
-  color: white;
-  font-size: 15px;
-}
-
-input:before {
-  border: none
-}
-
-</style>
+.img {
+  width: 45%;
+  background-color: #ddd;
+}</style>

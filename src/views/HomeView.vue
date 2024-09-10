@@ -3,7 +3,7 @@
 
 <template>
   <div class="container">
-    <div class="carrossel">
+    <div class="carrossel"> 
       <div class="textCarrossel">
         <h2>LIVROS</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa modi eaque minus vel atque quia
@@ -42,11 +42,57 @@
         <div class="img"></div>
       </div>
     </div>
+    <h1 class="tittle">MAIS EMPRESTADOS</h1>
+    <div class="container2">
+    <div class="MaisEmprestados">
+      <div class="MaisEL"></div>
+      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos commodi repellat non repudiandae nostrum eos culpa nobis deserunt assumenda exercitationem, mollitia numquam tempora ullam nesciunt eum quo nulla cum!</p>
+    </div>
+    <div class="MaisEmprestados">
+      <div class="MaisEL"></div>
+      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae fugiat omnis dolor a similique obcaecati enim officiis aut ipsam quisquam, adipisci ut, quod perferendis? Corrupti, necessitatibus. Consectetur, sunt sapiente.</p>
+    </div>
+    <div class="MaisEmprestados">
+      <div class="MaisEL"></div>
+      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut, natus, a soluta sequi dolor eum repudiandae praesentium non doloremque ipsam laudantium dolorem iste maxime voluptas culpa recusandae corporis quasi.</p>
+    </div>
+  </div>
   </div>
   <FooterComponent />
 </template>
 
 <style scoped>
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.PMaisE{
+  margin: 50px 1.4rem 0 30px;
+  color: #ffff;
+}
+.tittle{
+  padding-top: 50px;    
+  color: #D08597;
+}
+.container2{
+  display: flex;
+  gap: 4.4rem;
+}
+.MaisEL{
+  width: 280px;
+  height: 370px;
+  background-color: #D9D9D9;
+  margin: 30px 0 0 30px;
+  border-radius: 10px ;
+}
+
+.MaisEmprestados{
+  background-color: #D08597;
+  width: 340px;
+  height: 675px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
 .container {
   width: 70%;
   margin: auto;

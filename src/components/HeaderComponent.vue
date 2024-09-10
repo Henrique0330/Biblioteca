@@ -9,6 +9,7 @@ const showMenu = ref(false)
         <div>
             <h1 @click="this.$router.push('/')">BIBLIOTECA</h1>
         </div>
+        
         <div class="barra">
             <img src="/public/lupaPesquisa.svg" alt="Ícone de pesquisa" class="icon">
             <input type="pesquisa" name="pesquisa" placeholder="Buscar">
@@ -99,8 +100,7 @@ const showMenu = ref(false)
 .menuC {
     width: 50px;
     height: 50px;
-    margin-top: 40px;
-    margin-right: 130px;
+    margin: 40px auto 0 auto;
     cursor: pointer;
     user-select: none;
 }
@@ -159,6 +159,8 @@ header div h1:hover{
     color: white;
     font-size: 15px;
 }
+
+
 
 
 @media (max-width: 768px) {

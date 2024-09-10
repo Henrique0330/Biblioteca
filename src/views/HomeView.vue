@@ -12,6 +12,7 @@
           ipsum, porro doloremque quam quo molestias praesentium eaque hic temporibus minima expedita magnam?
         </p>
       </div>
+      <div></div>
       <div class="imgCarrossel"></div>
     </div>
     <div class="novidade">
@@ -20,7 +21,7 @@
       </div>
       <div class="content">
         <div class="text">
-          <h2>LIVRO 0</h2>
+          <h2>LIVRO 0</h2>  
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
             assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
             libero.</p>
@@ -28,13 +29,12 @@
         <div class="img"></div>
       </div>
     </div>
-    <div class="novidade">
+    <div class="melhorL">
       <div class="headerNew">
-        <h2>NOVIDADE</h2>
+        <h2>1 BEST SALLER</h2>
       </div>
       <div class="content">
         <div class="text">
-          <h2>LIVRO 0</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
             assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
             libero.</p>
@@ -43,74 +43,6 @@
       </div>
     </div>
   </div>
-  <!--   
-  <div class="cinema">
-    <div class="juntosC">
-      <h2 class="Lcinema">LIVROS</h2>
-      <div class="bioC">
-        <p class="clean">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur
-          possimus
-          quasi
-          labore! Magni dolore nostrum quidem dolorem error iure, dolores temporibus explicabo necessitatibus ab
-          minus.
-          ima inventore animi totam aspernatur cupiditate. Laboriosam qui cupiditate nemo mollitia praesentium.
-          Nesciunt, qui? Ex aspernatur doloribus aliquam obcaecati minus esse mollitia!
-        </p>
-        <div class="Lcontainer"></div>
-      </div>
-    </div>
-  </div>
-  <div class="together">
-    <div class="novidade">
-      <h2 class="tittle">Novidade</h2>
-      <div class="container">
-        <div class="livroN"></div>
-        <div class="livro1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus, ducimus
-          aliquam perferendis quidem iure natus corporis, voluptatibus vero amet doloremque est, unde reprehenderit
-          distinctio. Rerum maxime debitis aut minus?</div>
-      </div>
-    </div>
-    <div class="melhoresL">
-      <h1 class="tittleN">1 Best seller</h1>
-      <div class="container2">
-        <div class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores debitis amet ipsa
-          accusamus earum, fugit perferendis velit id soluta temporibus illo! Ullam, error!</div>
-        <div class="imagem"></div>
-      </div>
-    </div>
-  </div>
-  <div class="MaisE">Mais Emprestados</div>
-  <div class="container3">
-    <div class="LivrosME1">
-      <div class="together2">
-        <div class="L1"></div>
-        <div class="clean2">
-          <h2>Livros</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-            repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-            expedita! Ratione, doloremque itaque.</p>
-        </div>
-      </div>
-    </div>
-    <div class="LivrosME2">
-      <div class="together2">
-        <div class="L1"></div>
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
-      </div>
-    </div>
-    <div class="LivrosME3">
-      <div class="together2">
-        <div class="L1"></div>
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
-      </div>
-    </div>
-  </div> -->
   <FooterComponent />
 </template>
 
@@ -121,6 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-size: 18px;
 }
 
 .carrossel {
@@ -128,26 +61,49 @@
   height: 20rem;
   display: flex;
   justify-content: space-between;
+  background-color: #D08597;
+  border-radius: 10px;
 }
 
 .textCarrossel {
   width: 45%;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-left: 50px;
+  color: #ddd;
 }
 
 .imgCarrossel {
   width: 45%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ddd;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 
 .novidade {
   width: 40%;
   height: 20rem;
   margin: 2rem auto;
+  background-color: #85B5D0;
+  border-radius: 10px;
+  color:#ddd;
+  border-radius: 10px;
+  
+}
+
+.melhorL{
+  width: 40%;
+  height: 20rem;
+  margin: 2rem auto;
+  border: #F0C65B solid;
+  color: #F0C65B;
+  border-radius: 10px;
 }
 
 .headerNew {
@@ -155,12 +111,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
 
 .content {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-top: 40px;
 }
 
 .text {
@@ -170,6 +128,8 @@
 }
 
 .img {
-  width: 45%;
+  width: 150px;
+  height: 200px;
   background-color: #ddd;
+  border-radius: 10px;
 }</style>

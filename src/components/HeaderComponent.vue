@@ -19,11 +19,12 @@ const showMenu = ref(false)
             <div class="fundo">
                 <ul class="menu-list">
                     <li class="menu-item">GÊNEROS</li>
-                    <li class="submenu-item" @click="this.$router.push('/susTerror')">• SUSPENSE & TERROR</li>
-                    <li class="submenu-item" @click="this.$router.push('/aventura')">• AVENTURA</li>
-                    <li class="submenu-item" @click="this.$router.push('/romance')">• ROMANCE</li>
-                    <li class="submenu-item" @click="this.$router.push('/diversos')">• ESTUDOS DIVERSOS</li>
-                    <li class="menu-item">EMPRESTADOS</li>
+                    <li class="submenu-item" @click="this.$router.push('/susTerror')">SUSPENSE & TERROR</li>
+                    <li class="submenu-item" @click="this.$router.push('/aventura')">AVENTURA</li>
+                    <li class="submenu-item" @click="this.$router.push('/romance')">ROMANCE</li>
+                    <li class="submenu-item" @click="this.$router.push('/diversos')">ESTUDOS DIVERSOS</li>
+                    <li class="submenu-item" @click="this.$router.push('')">TODOS</li>
+                    <li class="emprestados" @click="this.$router.push('')"><u>EMPRESTADOS</u></li>
                 </ul>
                 <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>
             </div>
@@ -61,9 +62,17 @@ const showMenu = ref(false)
 .menu-item {
     margin: 20px 0;
     font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+.emprestados {
+    margin: 20px 0;
+    font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: 60px;
+    cursor: pointer;
 }
 
 .submenu-item {

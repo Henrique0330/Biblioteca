@@ -12,7 +12,7 @@ function trocarTexto(){
 </script>
 <template>
     <div class="container">
-        <form action="" class="cadastro" @submit.prevent>
+        <form action="" class="cadastro" @submit.prevent="this.$router.push('/login')">
             <h1>CADASTRO</h1>
             <h3>Você é:</h3>
             <div class="EstudanteResponsavel">
@@ -32,7 +32,7 @@ function trocarTexto(){
             <label for="CPF do responsável">{{texto}}</label>
             <input type="text" name="" id="" placeholder="CPF do responsável">
             <button class="BotaoCadastro">Cadastrar</button>
-            <RouterLink to='/login'> Não tem conta?</RouterLink>
+            <RouterLink to='/login'> Já tenho conta</RouterLink>
         </form>
     </div>
 </template>

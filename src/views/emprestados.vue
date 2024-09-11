@@ -39,7 +39,10 @@ import FooterComponent from '@/components/FooterComponent.vue';
             </div>
         </div>
     </div>
-    <button class="multa">MULTA R$ 0,00</button>
+    <div class="botoes">
+    <button class="multa">MULTA <br>R$ 0,00</button>
+    <button class="voltar">VOLTAR</button>
+</div>
 </div>
 
 </template>
@@ -47,7 +50,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 .container{
-    height: 80vh;
+    height: 90vh;
     padding: 3rem 0;
     width: 100%;
     background-color: #689062;
@@ -92,4 +95,35 @@ h5{
     font-size: 25px;
     letter-spacing: 5px;
 }
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin: 73px auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+.multa{
+    color: #689062;
+    background-color: white;
+    width: 200px;
+    border-radius: 20px;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.voltar{
+    margin-top: 8px;
+    background-color: #689062;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 </style>

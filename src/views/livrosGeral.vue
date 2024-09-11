@@ -1,34 +1,62 @@
 <script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
+import { ref } from "vue"
+
+const props = defineProps({
+  isOpen: Boolean,
+  route: String
+})
+
+const emit = defineEmits(["update:isOpen"])
+
+const closeModal = () => {
+  emit("update:isOpen", false)
+}
+
 </script>
 
 <template>
-<HeaderComponent />
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <main v-if="isOpen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <div class="card">
-    <div class="card-content">
-      <div class="livro-imagem">
-      </div>
-      <div class="livro-info">
-        <h3 class="livro-titulos">Livro 1</h3>
-        <p class="status">disponível</p>
-        <p class="descriçao">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur temporibus, qui nemo illum consequuntur placeat, blanditiis soluta perferendis repellendus, molestiae iste! Eligendi, fugiat esse maxime consectetur debitis accusamus atque cumque.
-        </p>
-        <div class="botoes">
-          <button class="botao-livre">L</button>
-          <button class="botao-emprestar">EMPRESTAR</button>
+      <div class="card-content">
+        <div class="livro-imagem">
         </div>
+        <div class="livro-info">
+          <h3 class="livro-titulos">Livro 1</h3>
+          <p class="status">disponível</p>
+          <p class="descriçao">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur temporibus, qui nemo illum consequuntur
+            placeat, blanditiis soluta perferendis repellendus, molestiae iste! Eligendi, fugiat esse maxime consectetur
+            debitis accusamus atque cumque.
+          </p>
+          <div class="botoes">
+            <button class="botao-livre">L</button>
+            <button class="botao-emprestar"  @click="this.$router.push(`${route}`)">EMPRESTAR</button>
+          </div>
+        </div>
+        <button class="fechar-button" @click="closeModal">X</button>
       </div>
-      <button class="fechar-button">X</button>
     </div>
-  </div>
-  <FooterComponent />
+  </main>
 </template>
 <style scoped>
+main {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.562);
+  backdrop-filter: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -57,11 +85,12 @@ import FooterComponent from '@/components/FooterComponent.vue';
   border-radius: 10px;
   margin-left: 90px;
 }
+
 .livro-info {
   flex: 1;
   display: grid;
   align-content: space-around;
-  
+
 }
 
 .livro-titulos {
@@ -94,8 +123,8 @@ import FooterComponent from '@/components/FooterComponent.vue';
   align-items: center;
 }
 
-.botao-emprestar{
-  background-color: #6bb47e;
+.botao-emprestar {
+  background-color: #f48942;
   border: none;
   color: white;
   margin: auto;
@@ -108,7 +137,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 }
 
 .botao-livre {
-  background-color: #f48942;
+  background-color: #6bb47e;
   border: none;
   color: white;
   padding: 8px 16px;
@@ -133,5 +162,4 @@ import FooterComponent from '@/components/FooterComponent.vue';
   top: 16px;
   cursor: pointer;
 }
-
 </style>

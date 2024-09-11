@@ -23,7 +23,7 @@ const showMenu = ref(false)
                     <li class="submenu-item" @click="this.$router.push('/aventura')">AVENTURA</li>
                     <li class="submenu-item" @click="this.$router.push('/romance')">ROMANCE</li>
                     <li class="submenu-item" @click="this.$router.push('/diversos')">ESTUDOS DIVERSOS</li>
-                    <li class="submenu-item" @click="this.$router.push('')">TODOS</li>
+                    <li class="submenu-item" @click="this.$router.push('/todos')">TODOS</li>
                     <li class="emprestados" @click="this.$router.push('')"><u>EMPRESTADOS</u></li>
                 </ul>
                 <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>

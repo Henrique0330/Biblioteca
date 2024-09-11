@@ -1,16 +1,24 @@
 <script setup>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
+import { ref } from "vue"
+import livrosGeral from './livrosGeral.vue';
+const showModal = ref(false)
+const route = ref("")
+function show (routeParam) {
+    showModal.value = !showModal.value
+    route.value = routeParam }
 </script>
 
 <template>
+    <livrosGeral v-model:is-open="showModal" :route="route" />
     <HeaderComponent />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <h1 class="titulo">ESTUDOS DIVERSOS</h1>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -20,7 +28,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 <div class="classificacao"><img src="/public/indicacaoLivre.png" alt="Indicação Livre"></div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -30,7 +38,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 <div class="classificacao"><img src="/public/indicacao16.png" alt="Indicação 16 anos"></div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -42,7 +50,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         </div>
     </div>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -52,7 +60,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 <div class="classificacao"><img src="/public/indicacaoLivre.png" alt="Indicação Livre"></div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -62,7 +70,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 <div class="classificacao"><img src="/public/indicacao16.png" alt="Indicação 16 anos"></div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -109,6 +117,7 @@ h2 {
     height: 380px;
     border: #689062 5px solid;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .contentLivro {

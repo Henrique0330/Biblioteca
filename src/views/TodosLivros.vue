@@ -185,7 +185,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
 
 }

@@ -31,7 +31,7 @@
     </div>
     <div class="melhorL">
       <div class="headerNew">
-        <h2>1 BEST SALLER</h2>
+        <h2>1 BEST SELLER</h2>
       </div>
       <div class="content">
         <div class="text">
@@ -46,30 +46,45 @@
     <div class="container2">
     <div class="MaisEmprestados">
       <div class="MaisEL"></div>
+      <h3 class="livros">Livro 1</h3>
       <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos commodi repellat non repudiandae nostrum eos culpa nobis deserunt assumenda exercitationem, mollitia numquam tempora ullam nesciunt eum quo nulla cum!</p>
     </div>
-    <div class="MaisEmprestados">
+    <div class="MaisEmprestados2">
       <div class="MaisEL"></div>
-      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae fugiat omnis dolor a similique obcaecati enim officiis aut ipsam quisquam, adipisci ut, quod perferendis? Corrupti, necessitatibus. Consectetur, sunt sapiente.</p>
+      <h3 class="livros2">Livro 2</h3>
+      <p class="PMaisE2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae fugiat omnis dolor a similique obcaecati enim officiis aut ipsam quisquam, adipisci ut, quod perferendis? Corrupti, necessitatibus. Consectetur, sunt sapiente.</p>
     </div>
-    <div class="MaisEmprestados">
+    <div class="MaisEmprestados3">
       <div class="MaisEL"></div>
+      <h3 class="livros">Livro 3</h3>
       <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut, natus, a soluta sequi dolor eum repudiandae praesentium non doloremque ipsam laudantium dolorem iste maxime voluptas culpa recusandae corporis quasi.</p>
     </div>
   </div>
   </div>
   <FooterComponent />
 </template>
-
 <style scoped>
 .carousel-inner img {
     width: 100%;
     height: 100%;
   }
+  .livros2{
+    color: #8FD085;
+    margin: 30px;
+  }
+  .PMaisE2{
+    color: #8FD085;
+    margin: 30px 1.4rem 0 30px;
+  }
 .PMaisE{
-  margin: 50px 1.4rem 0 30px;
+  margin: 30px 1.4rem 0 30px;
   color: #ffff;
 }
+.livros{
+  margin: 30px;
+  color: #ffffff;
+}
+
 .tittle{
   padding-top: 50px;    
   color: #D08597;
@@ -93,6 +108,23 @@
   border-radius: 10px;
   margin-top: 40px;
 }
+
+.MaisEmprestados2{
+  border: #8FD085 solid;
+  width: 340px;
+  height: 675px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.MaisEmprestados3{
+  background-color: #85B5D0;
+  width: 340px;
+  height: 675px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
 .container {
   width: 70%;
   margin: auto;

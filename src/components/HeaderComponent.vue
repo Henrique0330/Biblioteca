@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { useRoute } from 'vue-router'
-const route = useRoute()
 const showMenu = ref(false)
 </script>
 <template>
@@ -26,7 +24,6 @@ const showMenu = ref(false)
                     <li class="submenu-item" @click="this.$router.push('/romance')">• ROMANCE</li>
                     <li class="submenu-item" @click="this.$router.push('/diversos')">• ESTUDOS DIVERSOS</li>
                     <li class="menu-item">EMPRESTADOS</li>
-                    <li class="menu-item">SOBRE NÓS</li>
                 </ul>
                 <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>
             </div>
@@ -36,12 +33,10 @@ const showMenu = ref(false)
 
 <style scoped>
 .menuSelection{
-    position: absolute;
+    position: fixed;
     z-index: 10;
-    height: 100%;
-    width: 20vw;
+    height: 100vh;
     right: 0;
-    margin-top: 120px;
 }
 .fundo{
     width: 300px;
@@ -52,6 +47,7 @@ const showMenu = ref(false)
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    height: 100%;
 }
 
 .menu-list {
@@ -59,6 +55,7 @@ const showMenu = ref(false)
     padding: 0;
     width: 100%;
     text-align: center;
+    margin-top: 40px;
 }
 
 .menu-item {
@@ -66,15 +63,17 @@ const showMenu = ref(false)
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
+    margin-top: 60px;
 }
 
 .submenu-item {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
     border: 2px solid #FFFFFF;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .submenu-item:hover {

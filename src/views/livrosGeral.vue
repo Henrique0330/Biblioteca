@@ -10,31 +10,31 @@ import FooterComponent from '@/components/FooterComponent.vue';
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <div class="card">
     <div class="card-content">
-      <div class="book-image">
+      <div class="livro-imagem">
       </div>
-      <div class="book-info">
-        <h3 class="book-title">Livro 1</h3>
+      <div class="livro-info">
+        <h3 class="livro-titulos">Livro 1</h3>
         <p class="status">disponível</p>
-        <p class="description">
+        <p class="descriçao">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur temporibus, qui nemo illum consequuntur placeat, blanditiis soluta perferendis repellendus, molestiae iste! Eligendi, fugiat esse maxime consectetur debitis accusamus atque cumque.
         </p>
-        <div class="actions">
-            
-          <button class="button-icon">L</button>
-          <button class="button-action">EMPRESTAR</button>
+        <div class="botoes">
+          <button class="botao-livre">L</button>
+          <button class="botao-emprestar">EMPRESTAR</button>
         </div>
       </div>
-      <button class="close-button">X</button>
+      <button class="fechar-button">X</button>
     </div>
   </div>
+  <FooterComponent />
 </template>
 <style scoped>
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 6px solid #6bb47e;
-  border-radius: 8px;
+  border: 8px solid #6bb47e;
+  border-radius: 10px;
   padding: 16px;
   background-color: #f9f8f6;
   position: relative;
@@ -48,65 +48,82 @@ import FooterComponent from '@/components/FooterComponent.vue';
   width: 100%;
 }
 
-.book-image {
-  margin-right: 20px;
+.livro-imagem {
+  margin-right: 40px;
   background-color: #666;
   border-radius: 4px;
-  width: 50%;
-  height: 280px;
+  width: 283px;
+  height: 383.18px;
+  border-radius: 10px;
+  margin-left: 90px;
 }
-.book-info {
+.livro-info {
   flex: 1;
+  display: grid;
+  align-content: space-around;
+  
 }
 
-.book-title {
-  font-size: 24px;
+.livro-titulos {
+  font-size: 40px;
   margin: 0;
   color: #36834a;
+  text-align: center;
+  letter-spacing: 8px;
 }
 
 .status {
   color: #6bb47e;
   font-weight: bold;
   margin: 8px 0;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 8px;
 }
 
-.description {
-  font-size: 12px;
+.descriçao {
+  font-size: 25px;
   color: #666;
   line-height: 1.4;
+  text-align: justify;
 }
 
-.actions {
+.botoes {
   margin-top: 16px;
   display: flex;
   align-items: center;
 }
 
-.button-icon {
+.botao-emprestar{
   background-color: #6bb47e;
   border: none;
   color: white;
-  padding: 8px;
-  margin-right: 16px;
-  border-radius: 4px;
+  margin: auto;
+  border-radius: 23px;
+  cursor: pointer;
+  width: 393px;
+  height: 60px;
+  font-size: 23px;
+  letter-spacing: 10px;
 }
 
-.button-action {
+.botao-livre {
   background-color: #f48942;
   border: none;
   color: white;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
 }
 
-.button-action:hover {
+.button-livre:hover {
   background-color: #d97d38;
 }
 
-.close-button {
+.fechar-button {
   background: none;
   border: none;
   color: #666;

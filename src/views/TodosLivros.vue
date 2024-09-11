@@ -185,7 +185,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
 
 }
@@ -203,7 +203,7 @@ h2 {
     flex-direction: column;
     width: 100%px;
     height: 252px;
-    border: #689062 10px solid;
+    border: #689062 6px solid;
     border-radius: 16px;
     align-items: center;
     justify-content: center;

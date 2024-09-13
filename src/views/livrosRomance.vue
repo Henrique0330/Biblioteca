@@ -92,7 +92,7 @@ h2 {
 .titulo{
     color: #FF517B;
     text-align: center;
-    margin: 0 0 3rem 0;
+    margin: 3rem 0 3rem 0;
 }
 
 .livros1 {

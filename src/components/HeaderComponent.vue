@@ -24,7 +24,7 @@ const showMenu = ref(false)
                     <li class="submenu-item" @click="this.$router.push('/romance')">ROMANCE</li>
                     <li class="submenu-item" @click="this.$router.push('/diversos')">ESTUDOS DIVERSOS</li>
                     <li class="submenu-item" @click="this.$router.push('/todos')">TODOS</li>
-                    <li class="emprestados" @click="this.$router.push('')"><u>EMPRESTADOS</u></li>
+                    <li class="emprestados" @click="this.$router.push('emprestados')"><u>EMPRESTADOS</u></li>
                 </ul>
                 <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>
             </div>
@@ -118,7 +118,6 @@ header {
     justify-content: space-evenly;
     width: 100%;
     height: 120px;
-    margin: 0 0 3rem 0;
     background-color: #8FD085;
 }
 

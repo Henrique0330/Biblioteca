@@ -16,37 +16,37 @@ const router = createRouter({
     {
       path: '/cadastro',
       name: 'cadastro',
-      component: () => import('../views/CadastroView.vue')
+      component: () => import ('../views/CadastroView.vue')
     },
     {
       path: '/susTerror',
       name: 'susTerror',
-      component: () => import('../views/livrosSuspTerr.vue')
+      component: () => import ('../views/livrosSuspTerr.vue')
     },
     {
       path: '/aventura',
       name: 'aventura',
-      component: () => import('../views/livrosAventura.vue')
+      component: () => import ('../views/livrosAventura.vue')
     },
     {
       path: '/diversos',
       name: 'diversos',
-      component: () => import('../views/livrosDiversos.vue')
+      component: () => import ('../views/livrosDiversos.vue')
     },
     {
       path: '/romance',
       name: 'romance',
-      component: () => import('../views/livrosRomance.vue')
+      component: () => import ('../views/livrosRomance.vue')
     },
     {
-      path: '/geral',
-      name: 'geral',
-      component: () => import('../views/livrosGeral.vue')
+      path: '/emprestados',
+      name: 'emprestados',
+      component: () => import ('../views/emprestados.vue')
     },
     {
       path: '/todos',
       name: 'todos',
-      component: () => import('../views/TodosLivros.vue')
+      component: () => import ('../views/TodosLivros.vue')
     }
   ]
 })

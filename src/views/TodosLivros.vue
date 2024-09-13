@@ -1,16 +1,24 @@
 <script setup>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
+import { ref } from "vue"
+import livrosGeral from './livrosGeral.vue';
+const showModal = ref(false)
+const route = ref("")
+function show (routeParam) {
+    showModal.value = !showModal.value
+    route.value = routeParam }
 </script>
 
 <template>
+    <livrosGeral v-model:is-open="showModal" :route="route" />
     <HeaderComponent />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <h1 class="titulo">TODOS</h1>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -20,7 +28,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -29,7 +37,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -38,7 +46,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -49,7 +57,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         </div>
     </div>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -58,7 +66,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -68,7 +76,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -77,7 +85,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -88,7 +96,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         </div>
     </div>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -97,7 +105,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -107,7 +115,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -116,7 +124,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -127,7 +135,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
         </div>
     </div>
     <div class="livros1">
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -136,7 +144,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -146,7 +154,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -155,7 +163,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
                 </div>
             </div>
         </div>
-        <div class="livro1">
+        <div class="livro1" @click="show('')">
             <div class="imagem"></div>
             <div class="contentLivro">
                 <div class="textContent">
@@ -175,6 +183,10 @@ h2 {
 }
 .verMais{
     padding-top: 3rem;
+}
+.verMais:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .titulo {
     text-align: center;
@@ -208,6 +220,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .contentLivro {

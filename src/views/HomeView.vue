@@ -144,6 +144,7 @@ import FooterComponent from '@/components/FooterComponent.vue';
   justify-content: space-between;
   background-color: #D08597;
   border-radius: 10px;
+  margin: 3rem 0 0 0;
 }
 
 .textCarrossel {

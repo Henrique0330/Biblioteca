@@ -5,246 +5,213 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
 <template>
   <HeaderComponent />
-  <div class="cinema">
-    <div class="juntosC">
-
-      <h2 class="Lcinema">LIVROS</h2>
-      <div class="bioC">
-        <p class="clean">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste quis sint quos tenetur possimus
-          quasi
-          labore! Magni dolore nostrum quidem dolorem error iure, dolores temporibus explicabo necessitatibus ab
-          minus.
-          ima inventore animi totam aspernatur cupiditate. Laboriosam qui cupiditate nemo mollitia praesentium.
-          Nesciunt, qui? Ex aspernatur doloribus aliquam obcaecati minus esse mollitia!
+  <div class="container">
+    <div class="carrossel"> 
+      <div class="textCarrossel">
+        <h2>LIVROS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa modi eaque minus vel atque quia
+          unde labore incidunt pariatur ratione, sint in magni consequatur, dolorum asperiores nam autem commodi?Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, error rem qui vel saepe accusamus tempore ipsa
+          ipsum, porro doloremque quam quo molestias praesentium eaque hic temporibus minima expedita magnam?
         </p>
-        <div class="Lcontainer"></div>
       </div>
+      <div></div>
+      <div class="imgCarrossel"></div>
     </div>
-  </div>
-  <div class="together">
     <div class="novidade">
-      <h2 class="tittle">Novidade</h2>
-      <div class="container">
-        <div class="livroN"></div>
-        <div class="livro1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus, ducimus
-          aliquam perferendis quidem iure natus corporis, voluptatibus vero amet doloremque est, unde reprehenderit
-          distinctio. Rerum maxime debitis aut minus?</div>
+      <div class="headerNew">
+        <h2>NOVIDADE</h2>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>LIVRO 0</h2>  
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
+            assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
+            libero.</p>
+        </div>
+        <div class="img"></div>
       </div>
     </div>
-    <div class="melhoresL">
-      <h1 class="tittleN">1 Best seller</h1>
-      <div class="container2">
-        <div class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores debitis amet ipsa
-          accusamus earum, fugit perferendis velit id soluta temporibus illo! Ullam, error!</div>
-        <div class="imagem"></div>
+    <div class="melhorL">
+      <div class="headerNew">
+        <h2>1 BEST SELLER</h2>
       </div>
+      <div class="content">
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ducimus accusamus sequi nisi voluptas
+            assumenda. Suscipit eius temporibus optio ratione aut porro quisquam atque, ducimus magnam quibusdam at, ullam
+            libero.</p>
+        </div>
+        <div class="img"></div>
+      </div>
+    </div>
+    <h1 class="tittle">MAIS EMPRESTADOS</h1>
+    <div class="container2">
+    <div class="MaisEmprestados">
+      <div class="MaisEL"></div>
+      <h3 class="livros">Livro 1</h3>
+      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos commodi repellat non repudiandae nostrum eos culpa nobis deserunt assumenda exercitationem, mollitia numquam tempora ullam nesciunt eum quo nulla cum!</p>
+    </div>
+    <div class="MaisEmprestados2">
+      <div class="MaisEL"></div>
+      <h3 class="livros2">Livro 2</h3>
+      <p class="PMaisE2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vitae fugiat omnis dolor a similique obcaecati enim officiis aut ipsam quisquam, adipisci ut, quod perferendis? Corrupti, necessitatibus. Consectetur, sunt sapiente.</p>
+    </div>
+    <div class="MaisEmprestados3">
+      <div class="MaisEL"></div>
+      <h3 class="livros">Livro 3</h3>
+      <p class="PMaisE">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut, natus, a soluta sequi dolor eum repudiandae praesentium non doloremque ipsam laudantium dolorem iste maxime voluptas culpa recusandae corporis quasi.</p>
     </div>
   </div>
-  <div class="MaisE">Mais Emprestados</div>
-  <div class="container3">
-    <div class="LivrosME1">
-      <div class="together2">
-        <div class="L1"></div>
-        <div class="clean2">
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
-        </div>
-      </div>
-    </div>
-    <div class="LivrosME2">
-      <div class="together2">
-        <div class="L1"></div>
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
-      </div>
-    </div>
-    <div class="LivrosME3">
-      <div class="together2">
-        <div class="L1"></div>
-        <h2>Livros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corporis nostrum totam nihil suscipit
-          repellendus animi consequuntur nemo ipsa, culpa exercitationem delectus! Corporis molestiae minus qui
-          expedita! Ratione, doloremque itaque.</p>
-      </div>
-    </div>
   </div>
   <FooterComponent />
 </template>
-
 <style scoped>
-
-.clean{
-  padding-top: 20px;
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .livros2{
+    color: #8FD085;
+    margin: 30px;
+  }
+  .PMaisE2{
+    color: #8FD085;
+    margin: 30px 1.4rem 0 30px;
+  }
+.PMaisE{
+  margin: 30px 1.4rem 0 30px;
+  color: #ffff;
+}
+.livros{
+  margin: 30px;
+  color: #ffffff;
 }
 
-.LivrosME1 {
-  width: 340px;
-  height: 670px;
-  background-color: #D08585;
-  border-radius: 20px;
+.tittle{
+  padding-top: 50px;    
+  color: #D08597;
 }
-
-.LivrosME2 {
-  width: 340px;
-  height: 670px;
-  background-color: #F0C65B;
-  border-radius: 20px;
+.container2{
+  display: flex;
+  gap: 4.4rem;
 }
-
-.LivrosME3 {
-  width: 340px;
-  height: 670px;
-  background-color: #85B5D0;
-  border-radius: 20px;
-}
-
-.L1 {
+.MaisEL{
   width: 280px;
   height: 370px;
   background-color: #D9D9D9;
-  border-radius: 10px;
+  margin: 30px 0 0 30px;
+  border-radius: 10px ;
 }
 
-.together2 {
-  margin: 25px 28px 0 28px;
-  color: #FFFFFF;
-}
-
-.container3 {
-  display: flex;
-  gap: 5rem;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 70px;
-}
-
-.MaisE {
-  font-size: 40px;
-  margin-top: 180px;
-  text-align: center;
-  color: #D08585;
-}
-
-.novidade {
-  background-color: #85B5D0;
-  width: 450px;
-  height: 350px;
-  border-radius: 1rem;
-  padding-left: 38px;
-  color: #FFFFFF;
-}
-
-.livroN {
-  background-color: #D9D9D9;
-  width: 180px;
-  height: 250px;
-  border-radius: 1rem;
-}
-
-.container2 {
-  display: flex;
-  gap: 2rem;
-  padding-top: 30px;
-}
-
-.imagem {
-  background-color: #D9D9D9;
-  width: 270px;
-  height: 130px;
-  border-radius: 10px;
-}
-
-.bio {
-  width: 180px;
-  height: 250px;
-  padding-left: 50px;
-}
-
-.tittle {
-  text-align: center;
-  font-size: 25px;
-  margin: .5rem 0 1rem 0;
-}
-
-.tittleN {
-  text-align: center;
-  font-size: 90px;
-  margin: .5rem 1rem 1rem 0;
-  margin-top: 20px; 
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  gap: 1rem;
-  padding-top: 20px;
-}
-
-.livro1 {
-  width: 180px;
-  height: 250px;
-}
-
-.melhoresL {
-  width: 571px;
-  height: 350px;
-  border: #F0C65B solid;
-  border-radius: 1rem;
-  color: #FFE999;
-  font-size: 455px 130px;
-  margin-left: 45px;
-}
-
-.together {
-  display: flex;
-  margin-left: 318px;
-  margin-top: 45px;
-}
-
-.cinema {
-  width: 1060px;
-  height: 300px;
+.MaisEmprestados{
   background-color: #D08597;
-  border-radius: 0.5rem;
-  margin-left: 350px;
+  width: 340px;
+  height: 675px;
+  border-radius: 10px;
   margin-top: 40px;
 }
 
-.Lcontainer {
-  width: 800px;
-  height: 150px;
-  background-color: #D9D9D9;
+.MaisEmprestados2{
+  border: #8FD085 solid;
+  width: 340px;
+  height: 675px;
   border-radius: 10px;
+  margin-top: 40px;
 }
 
-.bioC {
+.MaisEmprestados3{
+  background-color: #85B5D0;
+  width: 340px;
+  height: 675px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 18px;
 }
 
-.juntosC {
-  padding: 50px 160px 0 160px;
-  color: #FFFFFF;
-}
-
-input {
+.carrossel {
+  width: 90%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #D08597;
   border-radius: 10px;
-  border: #FFFFFF solid;
-  background-color: #8FD085;
-  width: 300px;
-  height: 18px;
+  margin: 3rem 0 0 0;
 }
 
-input::placeholder {
-  color: white;
-  font-size: 15px;
+.textCarrossel {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 50px;
+  color: #ddd;
 }
 
-input:before {
-  border: none
+.imgCarrossel {
+  width: 45%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 
-</style>
+.novidade {
+  width: 40%;
+  height: 20rem;
+  margin: 2rem auto;
+  background-color: #85B5D0;
+  border-radius: 10px;
+  color:#ddd;
+  border-radius: 10px;
+  
+}
+
+.melhorL{
+  width: 40%;
+  height: 20rem;
+  margin: 2rem auto;
+  border: #F0C65B solid;
+  color: #F0C65B;
+  border-radius: 10px;
+}
+
+.headerNew {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 150px;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 10px;
+}</style>

@@ -12,7 +12,7 @@ function trocarTexto(){
 </script>
 <template>
     <div class="container">
-        <form action="" class="cadastro" @submit.prevent>
+        <form class="cadastro" @submit.prevent>
             <h1>CADASTRO</h1>
             <h3>Você é:</h3>
             <div class="EstudanteResponsavel">
@@ -22,17 +22,17 @@ function trocarTexto(){
             <label for="Nome">Nome</label>
             <input type="text" placeholder="Nome">
             <label for="Email">Email</label>
-            <input type="email" name="" id="" placeholder="Email">
+            <input type="email" placeholder="Email">
             <label for="Senha">Senha</label>
-            <input type="password" name="" id="" placeholder="Senha">
+            <input type="password" placeholder="Senha">
             <label for="Confirme senha">Confirme a senha</label>
-            <input type="password" name="" id="" placeholder="Confirme sua senha">
+            <input type="password" placeholder="Confirme sua senha">
             <label for="CPF">CPF</label>
-            <input type="text" name="" id="" placeholder="CPF">
+            <input type="text" placeholder="CPF">
             <label for="CPF do responsável">{{texto}}</label>
-            <input type="text" name="" id="" placeholder="CPF do responsável">
-            <button class="BotaoCadastro">Cadastrar</button>
-            <RouterLink to='/login'> Não tem conta?</RouterLink>
+            <input type="text" placeholder="CPF do responsável">
+            <button class="BotaoCadastro" v-on:click="this.$router.push('/login')">Cadastrar</button>
+            <RouterLink to='/login'> Já tenho conta</RouterLink>
         </form>
     </div>
 </template>

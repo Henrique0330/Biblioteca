@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { useRoute } from 'vue-router'
-const route = useRoute()
 const showMenu = ref(false)
 </script>
 <template>
@@ -9,6 +7,7 @@ const showMenu = ref(false)
         <div>
             <h1 @click="this.$router.push('/')">BIBLIOTECA</h1>
         </div>
+        
         <div class="barra">
             <img src="/public/lupaPesquisa.svg" alt="Ícone de pesquisa" class="icon">
             <input type="pesquisa" name="pesquisa" placeholder="Buscar">
@@ -20,12 +19,12 @@ const showMenu = ref(false)
             <div class="fundo">
                 <ul class="menu-list">
                     <li class="menu-item">GÊNEROS</li>
-                    <li class="submenu-item" @click="this.$router.push('/susTerror')">• SUSPENSE & TERROR</li>
-                    <li class="submenu-item" @click="this.$router.push('/aventura')">• AVENTURA</li>
-                    <li class="submenu-item" @click="this.$router.push('/romance')">• ROMANCE</li>
-                    <li class="submenu-item" @click="this.$router.push('/diversos')">• ESTUDOS DIVERSOS</li>
-                    <li class="menu-item">EMPRESTADOS</li>
-                    <li class="menu-item">SOBRE NÓS</li>
+                    <li class="submenu-item" @click="this.$router.push('/susTerror')">SUSPENSE & TERROR</li>
+                    <li class="submenu-item" @click="this.$router.push('/aventura')">AVENTURA</li>
+                    <li class="submenu-item" @click="this.$router.push('/romance')">ROMANCE</li>
+                    <li class="submenu-item" @click="this.$router.push('/diversos')">ESTUDOS DIVERSOS</li>
+                    <li class="submenu-item" @click="this.$router.push('/todos')">TODOS</li>
+                    <li class="emprestados" @click="this.$router.push('emprestados')"><u>EMPRESTADOS</u></li>
                 </ul>
                 <button class="login-button" @click="this.$router.push('/login')">LOGIN</button>
             </div>
@@ -35,23 +34,21 @@ const showMenu = ref(false)
 
 <style scoped>
 .menuSelection{
-    position: absolute;
+    position: fixed;
     z-index: 10;
-    height: 100%;
-    width: 20vw;
+    height: 100vh;
     right: 0;
-    margin-top: 120px;
 }
 .fundo{
     width: 300px;
     background-color: #5A7851;
     padding: 20px;
-    font-family: Arial, sans-serif;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    height: 100%;
 }
 
 .menu-list {
@@ -59,22 +56,33 @@ const showMenu = ref(false)
     padding: 0;
     width: 100%;
     text-align: center;
+    margin-top: 40px;
 }
 
 .menu-item {
     margin: 20px 0;
     font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+.emprestados {
+    margin: 20px 0;
+    font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
+    margin-top: 60px;
+    cursor: pointer;
 }
 
 .submenu-item {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
     border: 2px solid #FFFFFF;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .submenu-item:hover {
@@ -100,8 +108,7 @@ const showMenu = ref(false)
 .menuC {
     width: 50px;
     height: 50px;
-    margin-top: 40px;
-    margin-right: 130px;
+    margin: 40px auto 0 auto;
     cursor: pointer;
     user-select: none;
 }
@@ -111,7 +118,6 @@ header {
     justify-content: space-evenly;
     width: 100%;
     height: 120px;
-    margin: 0 0 3rem 0;
     background-color: #8FD085;
 }
 
@@ -162,6 +168,8 @@ header div h1:hover{
 }
 
 
+
+
 @media (max-width: 768px) {
     .barra input {
         max-width: 250px;
@@ -170,7 +178,7 @@ header div h1:hover{
 }
 
 @media (max-width: 480px) {
-    .barra input {
+    .barra input { 
         max-width: 200px;
         padding-left: 30px;
     }
